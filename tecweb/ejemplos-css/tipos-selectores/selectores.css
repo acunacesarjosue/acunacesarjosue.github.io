@@ -20,3 +20,7 @@ p {
     text-transform: capitalize;
     color: hotpink;
 }
+
+a {
+    text-decoration-line: none;
+}
