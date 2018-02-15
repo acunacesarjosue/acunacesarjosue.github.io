@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title> Tarea Formularios </title>
+    </head>
+
+    <body>
+        <h1> Register </h1>
+
+        <form method="POST" action="https://tecweb-eloyhz.c9users.io/envio.php">
+            <div>
+                <label for="name">
+                    First Name: 
+                </label>
+                <input id="name" name="nombre" type="text" placeholder="your first name">
+
+                <label for="lastN">
+                    Last Name:
+                </label>
+                <input id="lastN" name="contrasena" type="text" placeholder="your last name">
+            </div>
+
+            <div>
+                <label for="gen_male"> Male </label><input type="radio" name="genero" id="gen_male" value="Male" checked="checked">
+                <label for="gen_female"> Female </label><input type="radio" name="genero" id="gen_female" value="Female">
+                <label for="gen_other"> Other </label><input type="radio" name="genero" id="gen_other" value="Other">
+            </div>
+
+            <div>
+                <label for="email">
+                   Email: 
+                </label>
+                <input id="email" name="e_mail" type="text" placeholder="your email">
+
+                <label for="pass">
+                    Last Name:
+                </label>
+                <input id="pass" name="password" type="password" required placeholder="your password">
+            </div>
+
+            <div>
+                <label for="birthday">Birthday:</label>
+                <select name="month" id="birthday_month">
+                    <option selected disabled> Month </option>
+                    <option value="1"> Enero </option>
+                    <option value="2"> Febrero </option>
+                    <option value="2"> Marzo </option>
+                    <option value="2"> Abril </option>
+                    <option value="2"> Mayo </option>
+                </select>
+                <select name="day" id="birthday_day">
+                    <option selected disabled> Day </option>
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="2"> 3 </option>
+                    <option value="2"> 4 </option>
+                    <option value="2"> 5 </option>
+                </select>
+                <select name="birthday" id="birthday_year">
+                    <option selected disabled> Year </option>
+                    <option value="1"> 1989 </option>
+                    <option value="2"> 1990 </option>
+                    <option value="2"> 1991 </option>
+                    <option value="2"> 1992 </option>
+                    <option value="2"> 1993 </option>
+                </select>
+            </div>
+
+            <div>
+                <label for="agree"> I agree to the terms and conditions </label>
+                <input type="checkbox" id="agree" name="agree">
+            </div>
+
+            <input type="submit">
+        </form>
+
+    </body>
+
+</html>

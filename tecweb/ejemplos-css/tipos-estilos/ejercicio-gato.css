@@ -1,0 +1,29 @@
+.caja-principal {
+    border: solid 0px black;
+    width: 40%;
+    height: 400px; 
+}
+
+.caja-cabecera {
+    display: inline-block;
+    border: solid 2px black;
+    width: 31%;
+    height: 33%;
+    margin: -2px;
+}
+
+.no-top {
+    border-top: solid 2px white;
+}
+
+.no-left {
+    border-left: solid 2px white;
+}
+
+.no-bottom {
+    border-bottom: solid 2px white;
+}
+
+.no-right {
+    border-right: solid 2px white;
+}

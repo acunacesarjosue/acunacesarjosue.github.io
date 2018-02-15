@@ -1,0 +1,41 @@
+div{
+    padding: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.caja-azul{
+    background-color: blue;
+    color:black;
+    border: 15px solid darkblue;
+}
+
+.caja-amarilla{
+    background-color: yellow;
+    color: black;
+    border: 15px solid darkgoldenrod;
+    size: 30px;     
+}
+
+.caja-principal{
+    border: 1px solid black;
+}
+
+.caja{
+    background-color: white;
+}
+
+.en-linea{
+    display: inline;
+    background-color: white;
+}
+
+.en-bloque{
+    display: block;
+    background-color: white;
+}
+
+.en-linea-bloque{
+    display: inline-block;
+    background-color: white;
+}
