@@ -1,0 +1,9 @@
+.motto {
+    font-family: 'Kavivanar', cursive;
+    font-size: 25px;
+    float: right;
+    width: 40%;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    margin-top: 0px;
+}   

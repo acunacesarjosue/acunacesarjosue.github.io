@@ -1,0 +1,29 @@
+h2 {
+    background-color: azure;
+    border: 1px solid black;
+    padding-left: 10px;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+
+}
+
+div {
+    display: block;
+}
+
+#primero {
+    margin-top: 60px;
+}
+
+.columna1 {
+    background-color: lightblue;
+    float: left;
+    width: 350px;
+}
+
+.columna2 {
+    background-color: lightgreen;
+    float: left;
+    width: 350px;
+}

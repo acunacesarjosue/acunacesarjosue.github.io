@@ -27,3 +27,7 @@
 .no-right {
     border-right: solid 2px white;
 }
+
+.central {
+    margin: 1px white;
+}
