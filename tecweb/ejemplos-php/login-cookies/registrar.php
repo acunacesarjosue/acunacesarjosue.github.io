@@ -7,22 +7,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
     if(isset($_POST['usuario']) && isset($_POST['password']))
     {
-        $errores = "adentro";
         $usuario = $_POST['usuario'];
         $password = $_POST['password'];
         $password2 = $_POST['password2'];
 
         if($password == $password2)
         {
-            $sql = "select * from usuarios where usuario = $usuario";
-            $resultado = $conexion->query($sql);
-            $datos = $resultado->fetch(PDO::FETCH_NAMED);
-            var_dump($datos);
-            if($datos == false)
+            $sql = "SELECT * FROM usuarios WHERE usuario = :usuario";
+            $sentencia = $conexion->prepare($sql);
+            $sentencia->bindValue(':usuario', $usuario);
+            $sentencia->execute();
+
+            if($sentencia->fetch() == false)
             {
-                $sql =  "insert into usuarios (usuario, contrasena) values ('$usuario', '$password')";
-                $resultado = $conexion->exec($sql);
+                $sql =  "insert into usuarios (usuario, contrasena) values (:usuario, :password)";
+                $sentencia = $conexion->prepare($sql);
+                $sentencia->bindValue(':usuario', $usuario);
+                $sentencia->bindValue(':password', $password);
+                $resultado = $sentencia->execute();
                 setcookie('usuario', '$usuario');
+                return;
             }    
             else
                 $errores = 'Nombre de usuario ya existe';
